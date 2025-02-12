@@ -1,0 +1,30 @@
+Proporciona una explicacion detallado en un archivo .txt de las acciones que realizarias al cocinar un huevo
+
+Solucion:
+
+-Me dirijo a la cocina
+-Enciendo la luz
+-me asomo encime de la refri a ver si hay huevos
+-Si hay huevos:
+    +Procedo a tomar un par
+-Si no hay huevos:
+    +Procedor a salir a comprar huevos y me devuelvo a la cocina
+-Saco un sarten limpio
+-Si no hay limpios:
+    +procedo a lavar uno
+-Reviso si hay:
+    +aceite en spray
+    +salir
+    +(opcional jamoncito o salchicha)
+Si no hay pues no hagon nada 
+Si hay, procedo con calentar el sarten con aceite
+Si quiero huevos revueltos:
+-Bato los huevos con un poco de sal en un plato hondo
+-los vierto en el sarten
+-Revuelto hasta que la consistencia cambia a huevo frito (grumoso)
+Si quiero huevo frito:
+-Rompo un huevo a la vez el el sarten virtiendo el contenido en el sarten.
+-Cocinar hasta que la clara se vuelva blanca
+-Procedo a apagar el sarten
+-Coloco los huevos en un plato
+-Procedo a desayunar
