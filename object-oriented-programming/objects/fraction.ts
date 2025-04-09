@@ -1,4 +1,17 @@
-const createFraction = (numerator, denominator) => {
+
+
+interface Fraction { 
+   
+        numerator : number,
+        denominator: number
+}
+
+
+
+
+
+
+const createFraction = (numerator:number, denominator:number): Fraction => {
     return {
         numerator,
         denominator
@@ -6,22 +19,21 @@ const createFraction = (numerator, denominator) => {
 }
 
 
-
-const add = (f1, f2) => {
+const add = (f1:Fraction, f2:Fraction) => {
     const numerator= (f1.numerator*f2.denominator) + (f1.denominator * f2. numerator)
     const denominator = f1.denominator * f2.denominator
 
     return createFraction(numerator, denominator)
 }
 
-const substract = (f1, f2) => {
+const substract = (f1:Fraction, f2:Fraction) => {
     const numerator= (f1.numerator*f2.denominator) - (f1.denominator * f2. numerator) 
     const denominator = f1.denominator * f2.denominator
 
     return createFraction(numerator, denominator)
 }
 
-const multiply = (f1, f2) => {
+const multiply = (f1:Fraction, f2:Fraction) => {
     const numerator= (f1.numerator*  f2.numerator)
     const denominator = f1.denominator * f2.denominator
     
@@ -29,21 +41,34 @@ const multiply = (f1, f2) => {
 }
 
 
-const divide = (f1, f2) => {
+const divide = (f1:Fraction, f2:Fraction) => {
     const numerator= (f1.numerator*  f2.denominator)
     const denominator = f1.denominator * f2.numerator
     
     return createFraction(numerator, denominator)
 }
 
-const createFractionWithFunctions = (numerator, denominator) => {
+
+interface FractionWithOperators extends Fraction {
+    add: (f2:Fraction) => Fraction
+    substract: (f2:Fraction) => Fraction
+    multiply: (f2:Fraction) => Fraction
+    divide: (f2:Fraction) => Fraction
+}
+
+
+
+
+
+
+const createFractionWithFunctions = (numerator: number, denominator: number) => {
     const fraction = createFraction(numerator, denominator)
     return {
         ...f1,
-        add: (f2) => add (f1, f2),
-        substract: (f2) => substract (f1, f2),
-        multiply: (f2) => multiply (f1, f2),
-        divide: (f2) => divide (f1, f2),
+        add: (f2:Fraction) => add (f1, f2),
+        substract: (f2:Fraction) => substract (f1, f2),
+        multiply: (f2:Fraction) => multiply (f1, f2),
+        divide: (f2:Fraction) => divide (f1, f2),
     }
 
 }

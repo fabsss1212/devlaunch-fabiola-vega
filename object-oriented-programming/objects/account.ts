@@ -5,16 +5,18 @@ const cuantaBancaria = {              /*  here we create the object, this is tri
     Balance: 5,                       
     }
 
-function Account (id,name, balance = 0) {
+    interface Account
+
+function Account (id:number ,name: string, balance:number = 0) {
     this.id =id
     this.name = name
     this.balance = balance
 
-    this.deposit = (amount) => {
+    this.deposit = (amount:number) => {
       this.balance += amount
     }
 
-    this.withdraw = (amount) => {
+    this.withdraw = (amount:number)  => {
         if (this.balance >= amount) {
             this.balance-= amount
             return amount 
@@ -22,8 +24,11 @@ function Account (id,name, balance = 0) {
         
           return null
     }
+}
 
-    this.transfer = (toAccount, amount) => {
+
+
+    this.transfer = (toAccoun:Account, amount:number ) => {
         const cash = this.withdraw(amount)
         
         if (cash){
