@@ -63,7 +63,7 @@ class Elephant extends Animal {
     
         toString(): string {
             const info=  this.toString  ()
-            return `🐘 :\n${info}`
+            return `🐘 :\n${info}\nSize: ${this.size}`
         }
 
 }
