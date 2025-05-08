@@ -31,11 +31,11 @@ class Car extends Vehicle {
     private isAirOn: boolean
 
     constructor(
-    brand: string,
-     model: string,
-     year: number ,
+    brand : string,
+    model : string,
+    year : number,
     private numOfDoors: number = 4,
-){  super ('', brand, model, year)
+){  super ('', brand, model, year) //extends vehicle to make ih
     this.isAirOn = false
 
 

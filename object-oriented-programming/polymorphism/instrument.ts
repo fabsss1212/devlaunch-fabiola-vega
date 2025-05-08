@@ -32,7 +32,7 @@ class Drums extends Instrument {
     constructor(){
         super ('cuerda')
     } 
-    console.log ("boom, boom...🥁 ")
+    //console.log ("boom, boom...🥁 ")
     
    
 
@@ -59,4 +59,4 @@ const artist1 = new Artist
 
 guitar1.play()
 flaute1.play ()
-artist1.playInstrumeent()
+//artist1.playInstrumeent()
