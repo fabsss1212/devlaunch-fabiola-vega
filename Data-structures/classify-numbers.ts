@@ -1,8 +1,8 @@
 
-function numbersPrint(): string {
-    let result: string = "";
+function numbersPrintIsOddOrEven(): string { //defines function with a string??
+    let result: string = " "; //variable is empty + will be filled w contidionasl + the iteration.
 
-    for (let i: number = 1; i <= 10; i++) {
+    for (let i: number = 0; i <= 10; i++) {
         if (i % 2 === 0) {
             result += `${i} is even\n`;
         } else {
@@ -12,5 +12,4 @@ function numbersPrint(): string {
 
     return result;
 }
-
-console.log(numbersPrint());
+console.log(numbersPrintIsOddOrEven());
