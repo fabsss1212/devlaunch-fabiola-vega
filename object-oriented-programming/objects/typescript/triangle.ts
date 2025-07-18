@@ -19,11 +19,11 @@ const t2 = {              /*  here we create the object, this is triangle and ev
         c: 5,                       
         }
         
-const validateTriangle = ((a, b, c )): Triangle ) =>{
+/*const validateTriangle = ((a, b, c )): Triangle ) =>{
     
     
         return (b+c) > a && (a+c) >b && (a+b) > c        /*  here we get to work with the function and return*/
-    }
     
-    console.log(validateTriangle(t1))
-    console.log(validateTriangle(t2))
+    
+   /* console.log(validateTriangle(t1))
+    console.log(validateTriangle(t2))*/
