@@ -1,0 +1,20 @@
+
+let  calculateTax = (price) => {
+    if (price >5000){
+        return price *0.13 - price *0.5
+    } else {
+        return price *0.13}
+}
+
+console.log(calculateTax(50000))
+
+
+let fibonacci = (n)=>{
+    if (n<2){
+        return n
+    }
+
+return fibonacci(n-1)+ fibonacci(n-2)
+}
+
+console.log(fibonacci(10))
